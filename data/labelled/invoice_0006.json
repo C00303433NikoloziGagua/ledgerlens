@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Achison Group",
+  "supplier_vat_number": null,
+  "customer_name": "Tracy, Crampsey and Greely",
+  "invoice_number": "SI-2026-0006",
+  "invoice_date": "2026-08-23",
+  "due_date": null,
+  "currency": "EUR",
+  "net_amount": "136.41",
+  "vat_amount": "18.42",
+  "total_amount": "154.83",
+  "category": "Professional services"
+}

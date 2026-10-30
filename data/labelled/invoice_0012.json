@@ -1,0 +1,13 @@
+{
+  "supplier_name": "MacFall-Fitzmaurice",
+  "supplier_vat_number": "IE4162996H",
+  "customer_name": "Keenaghan-Comber",
+  "invoice_number": "A-2026-0012",
+  "invoice_date": "2026-10-06",
+  "due_date": null,
+  "currency": "EUR",
+  "net_amount": "69.28",
+  "vat_amount": "9.35",
+  "total_amount": "78.63",
+  "category": "Office supplies"
+}

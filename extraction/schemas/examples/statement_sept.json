@@ -1,0 +1,29 @@
+{
+  "bank_name": "Example Bank",
+  "account_last4": "4821",
+  "period_start": "2026-09-01",
+  "period_end": "2026-09-30",
+  "currency": "EUR",
+  "opening_balance": "1250.00",
+  "closing_balance": "3056.30",
+  "transactions": [
+    {
+      "date": "2026-09-04",
+      "description": "ACME OFFICE SUPPLIES",
+      "amount": "-147.60",
+      "balance": "1102.40"
+    },
+    {
+      "date": "2026-09-14",
+      "description": "NORTHSIDE FUEL STATION",
+      "amount": "-46.10",
+      "balance": "1056.30"
+    },
+    {
+      "date": "2026-09-25",
+      "description": "CLIENT PAYMENT",
+      "amount": "2000.00",
+      "balance": "3056.30"
+    }
+  ]
+}

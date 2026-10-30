@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Sinan-Kelly",
+  "supplier_vat_number": "IE9362688T",
+  "customer_name": "Paten-Scollan",
+  "invoice_number": "INV-2026-0003",
+  "invoice_date": "2026-08-25",
+  "due_date": "2026-09-24",
+  "currency": "EUR",
+  "net_amount": "729.75",
+  "vat_amount": "98.52",
+  "total_amount": "828.27",
+  "category": "Maintenance"
+}

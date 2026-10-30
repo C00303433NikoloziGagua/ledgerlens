@@ -1,0 +1,13 @@
+{
+  "supplier_name": "O'Kelly-Garrihy",
+  "supplier_vat_number": "IE6929115P",
+  "customer_name": "Sheehy-Philbin",
+  "invoice_number": "INV-2026-0010",
+  "invoice_date": "2026-02-07",
+  "due_date": "2026-03-09",
+  "currency": "EUR",
+  "net_amount": "986.70",
+  "vat_amount": "133.20",
+  "total_amount": "1119.90",
+  "category": "Maintenance"
+}

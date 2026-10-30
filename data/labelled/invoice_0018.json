@@ -1,0 +1,13 @@
+{
+  "supplier_name": "MacAnally, Carroll and McLeigh",
+  "supplier_vat_number": "IE6199572B",
+  "customer_name": "Terry-Shanley",
+  "invoice_number": "INV-2026-0018",
+  "invoice_date": "2026-01-08",
+  "due_date": "2026-02-07",
+  "currency": "EUR",
+  "net_amount": "829.98",
+  "vat_amount": "190.90",
+  "total_amount": "1020.88",
+  "category": "Utilities"
+}

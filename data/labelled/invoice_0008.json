@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Lynchechaun-O'Beirne",
+  "supplier_vat_number": "IE2393608L",
+  "customer_name": "Dobbin-Rhattigan",
+  "invoice_number": "INV-2026-0008",
+  "invoice_date": "2026-02-17",
+  "due_date": "2026-03-19",
+  "currency": "EUR",
+  "net_amount": "460.40",
+  "vat_amount": "62.15",
+  "total_amount": "522.55",
+  "category": "Utilities"
+}

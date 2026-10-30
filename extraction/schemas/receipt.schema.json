@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Receipt",
+  "description": "Fields extracted from a receipt. Every field is always present and is null when it can't be found.",
+  "type": "object",
+  "properties": {
+    "merchant_name": { "type": ["string", "null"] },
+    "date": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, e.g. 2026-09-14",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "currency": {
+      "type": ["string", "null"],
+      "description": "ISO 4217 code, e.g. EUR",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "total_amount": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 46.10",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "vat_amount": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 8.62",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "payment_method": {
+      "type": ["string", "null"],
+      "description": "How the receipt was paid",
+      "enum": ["card", "cash", "other", null]
+    },
+    "category": { "type": ["string", "null"] }
+  },
+  "required": [
+    "merchant_name", "date", "currency",
+    "total_amount", "vat_amount", "payment_method", "category"
+  ],
+  "additionalProperties": false
+}

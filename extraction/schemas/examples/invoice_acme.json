@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Acme Office Supplies Ltd",
+  "supplier_vat_number": "IE1234567T",
+  "customer_name": "Example Customer Ltd",
+  "invoice_number": "INV-2026-0412",
+  "invoice_date": "2026-09-03",
+  "due_date": "2026-10-03",
+  "currency": "EUR",
+  "net_amount": "120.00",
+  "vat_amount": "27.60",
+  "total_amount": "147.60",
+  "category": "Office supplies"
+}

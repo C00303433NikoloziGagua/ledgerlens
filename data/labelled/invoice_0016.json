@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Sheilds-MacGlynn",
+  "supplier_vat_number": "IE5497983M",
+  "customer_name": "Beggan Ltd",
+  "invoice_number": "A-2026-0016",
+  "invoice_date": "2026-10-18",
+  "due_date": "2026-11-17",
+  "currency": "EUR",
+  "net_amount": "1107.72",
+  "vat_amount": "254.78",
+  "total_amount": "1362.50",
+  "category": "Maintenance"
+}

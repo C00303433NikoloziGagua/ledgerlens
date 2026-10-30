@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Gilbane PLC",
+  "supplier_vat_number": null,
+  "customer_name": "Tinney Ltd",
+  "invoice_number": "SI-2026-0015",
+  "invoice_date": "2026-10-07",
+  "due_date": "2026-11-06",
+  "currency": "EUR",
+  "net_amount": "817.14",
+  "vat_amount": "187.94",
+  "total_amount": "1005.08",
+  "category": "Software"
+}

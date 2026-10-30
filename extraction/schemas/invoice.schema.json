@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Invoice",
+  "description": "Fields extracted from an invoice. Every field is always present and is null when it can't be found.",
+  "type": "object",
+  "properties": {
+    "supplier_name": { "type": ["string", "null"] },
+    "supplier_vat_number": { "type": ["string", "null"] },
+    "customer_name": { "type": ["string", "null"] },
+    "invoice_number": { "type": ["string", "null"] },
+    "invoice_date": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, e.g. 2026-09-03",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "due_date": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, e.g. 2026-10-03",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "currency": {
+      "type": ["string", "null"],
+      "description": "ISO 4217 code, e.g. EUR",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "net_amount": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 120.00",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "vat_amount": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 27.60",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "total_amount": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 147.60",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "category": { "type": ["string", "null"] }
+  },
+  "required": [
+    "supplier_name", "supplier_vat_number", "customer_name", "invoice_number",
+    "invoice_date", "due_date", "currency",
+    "net_amount", "vat_amount", "total_amount", "category"
+  ],
+  "additionalProperties": false
+}

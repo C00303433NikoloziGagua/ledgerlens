@@ -1,0 +1,13 @@
+{
+  "supplier_name": "MacGing-Harrihy",
+  "supplier_vat_number": "IE2319675G",
+  "customer_name": "O'Halloran, Morrow and Dinneen",
+  "invoice_number": "SI-2026-0013",
+  "invoice_date": "2026-05-20",
+  "due_date": "2026-06-19",
+  "currency": "EUR",
+  "net_amount": "521.14",
+  "vat_amount": "119.86",
+  "total_amount": "641.00",
+  "category": "Maintenance"
+}

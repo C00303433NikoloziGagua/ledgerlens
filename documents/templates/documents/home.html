@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Your documents · LedgerLens{% endblock %}
+
+{% block content %}
+  <h1>Your documents</h1>
+
+  {% if documents %}
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Uploaded</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for document in documents %}
+          <tr>
+            <td><a href="{% url 'document_detail' document.pk %}">{{ document.original_name }}</a></td>
+            <td>{{ document.get_document_type_display|default:"-" }}</td>
+            <td>{{ document.get_status_display }}</td>
+            <td>{{ document.created|date:"d M Y H:i" }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No documents yet.</p>
+  {% endif %}
+
+  <a href="{% url 'upload' %}" role="button">Upload an invoice</a>
+{% endblock %}

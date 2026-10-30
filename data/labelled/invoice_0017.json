@@ -1,0 +1,13 @@
+{
+  "supplier_name": "O'Rourke, MacDonnell and Gilmore",
+  "supplier_vat_number": "IE2072316E",
+  "customer_name": "Mehigan and Sons",
+  "invoice_number": "SI-2026-0017",
+  "invoice_date": "2026-09-17",
+  "due_date": "2026-10-17",
+  "currency": "EUR",
+  "net_amount": "387.81",
+  "vat_amount": "89.20",
+  "total_amount": "477.01",
+  "category": "Utilities"
+}

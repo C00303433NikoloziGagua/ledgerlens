@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Rogerson, Lenaghan and Cranly",
+  "supplier_vat_number": "IE8143344T",
+  "customer_name": "Finucane-Dulohery",
+  "invoice_number": "A-2026-0007",
+  "invoice_date": "2026-08-20",
+  "due_date": null,
+  "currency": "EUR",
+  "net_amount": "2080.20",
+  "vat_amount": "280.83",
+  "total_amount": "2361.03",
+  "category": "Professional services"
+}

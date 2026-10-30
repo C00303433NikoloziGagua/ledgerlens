@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Whitty-Cadogan",
+  "supplier_vat_number": "IE6161129K",
+  "customer_name": "MacGinnity-O'Donohoe",
+  "invoice_number": "A-2026-0005",
+  "invoice_date": "2026-10-07",
+  "due_date": "2026-11-06",
+  "currency": "EUR",
+  "net_amount": "1250.48",
+  "vat_amount": "168.81",
+  "total_amount": "1419.29",
+  "category": "Software"
+}

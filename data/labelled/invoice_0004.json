@@ -1,0 +1,13 @@
+{
+  "supplier_name": "McPolin, MacBride and Troy",
+  "supplier_vat_number": "IE2720946N",
+  "customer_name": "Roberts, Parsons and McPolin",
+  "invoice_number": "A-2026-0004",
+  "invoice_date": "2026-01-26",
+  "due_date": null,
+  "currency": "EUR",
+  "net_amount": "2283.55",
+  "vat_amount": "308.28",
+  "total_amount": "2591.83",
+  "category": "Professional services"
+}

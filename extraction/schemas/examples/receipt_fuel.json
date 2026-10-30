@@ -1,0 +1,9 @@
+{
+  "merchant_name": "Northside Fuel Station",
+  "date": null,
+  "currency": "EUR",
+  "total_amount": "46.10",
+  "vat_amount": "8.62",
+  "payment_method": "card",
+  "category": "Fuel"
+}

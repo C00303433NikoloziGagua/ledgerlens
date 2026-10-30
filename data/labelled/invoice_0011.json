@@ -1,0 +1,13 @@
+{
+  "supplier_name": "Tehan, Harrison and Deloughrey",
+  "supplier_vat_number": "IE6644171H",
+  "customer_name": "Lahy, Weaver and Harkin",
+  "invoice_number": "A-2026-0011",
+  "invoice_date": "2026-03-20",
+  "due_date": "2026-04-19",
+  "currency": "EUR",
+  "net_amount": "2433.97",
+  "vat_amount": "328.59",
+  "total_amount": "2762.56",
+  "category": "Professional services"
+}

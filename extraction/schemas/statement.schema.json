@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bank statement",
+  "description": "Fields extracted from a bank statement. Every field is always present and is null when it can't be found.",
+  "type": "object",
+  "properties": {
+    "bank_name": { "type": ["string", "null"] },
+    "account_last4": {
+      "type": ["string", "null"],
+      "description": "Only the last 4 digits of the account number, e.g. 4821",
+      "pattern": "^\\d{4}$"
+    },
+    "period_start": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, e.g. 2026-09-01",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "period_end": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, e.g. 2026-09-30",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "currency": {
+      "type": ["string", "null"],
+      "description": "ISO 4217 code, e.g. EUR",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "opening_balance": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 1250.00",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "closing_balance": {
+      "type": ["string", "null"],
+      "description": "Decimal string with 2 places, e.g. 3056.30",
+      "pattern": "^-?\\d+\\.\\d{2}$"
+    },
+    "transactions": {
+      "type": "array",
+      "description": "Every transaction on the statement, in order",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": ["string", "null"],
+            "description": "ISO 8601 date, e.g. 2026-09-04",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "description": { "type": ["string", "null"] },
+          "amount": {
+            "type": ["string", "null"],
+            "description": "Negative for money out, e.g. -46.10",
+            "pattern": "^-?\\d+\\.\\d{2}$"
+          },
+          "balance": {
+            "type": ["string", "null"],
+            "description": "Running balance after this transaction",
+            "pattern": "^-?\\d+\\.\\d{2}$"
+          }
+        },
+        "required": ["date", "description", "amount", "balance"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "bank_name", "account_last4", "period_start", "period_end", "currency",
+    "opening_balance", "closing_balance", "transactions"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ document.original_name }} · LedgerLens{% endblock %}
+
+{% block content %}
+  <h1>{{ document.original_name }}</h1>
+
+  <p>
+    <strong>Status:</strong> {{ document.get_status_display }}
+    {% if document.document_type %}
+      · <strong>Type:</strong> {{ document.get_document_type_display }}
+    {% endif %}
+    · <a href="{% url 'document_file' document.pk %}">View original file</a>
+  </p>
+
+  {% if document.error_message %}
+    <article>
+      <strong>Processing failed:</strong> {{ document.error_message }}
+    </article>
+  {% endif %}
+
+  {% if rows %}
+    <h2>Extracted fields</h2>
+    <table>
+      <tbody>
+        {% for label, value in rows %}
+          <tr>
+            <th scope="row">{{ label }}</th>
+            <td>{{ value|default_if_none:"-" }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <small>Read by {{ extraction.model_name }} in {{ extraction.duration_ms }} ms.</small>
+  {% endif %}
+
+  {% if extraction.raw_text %}
+    <details>
+      <summary>Text read from the file</summary>
+      <pre>{{ extraction.raw_text }}</pre>
+    </details>
+  {% endif %}
+{% endblock %}

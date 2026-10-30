@@ -1,0 +1,13 @@
+{
+  "supplier_name": "MacHugh PLC",
+  "supplier_vat_number": "IE2645033H",
+  "customer_name": "Davitt, Hedderman and Weldon",
+  "invoice_number": "INV-2026-0001",
+  "invoice_date": "2026-01-02",
+  "due_date": "2026-02-01",
+  "currency": "EUR",
+  "net_amount": "4026.53",
+  "vat_amount": "543.58",
+  "total_amount": "4570.11",
+  "category": "Office supplies"
+}
